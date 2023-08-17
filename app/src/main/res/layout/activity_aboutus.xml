@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.aboutus">
+
+    <ImageView
+        android:id="@+id/bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sp4" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_below="@+id/bg_img"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:cardCornerRadius="12dp"
+        android:elevation="12dp">
+
+        <RelativeLayout
+            android:layout_width="389dp"
+            android:layout_height="439dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:text="About us"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/contact"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_view"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="16dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/imgProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="250dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="337dp"
+                        android:layout_height="match_parent"
+                        android:text="We Laxha Mens Wear situated at Kovilpalayam, Pollachi, Tamil Nadu, are proud to showcase the city's largest selection of men's clothing. We want to make shopping online safe and simple for you. Combining cutting-edge design with an affordable price tag, we’ve been pushing boundaries to bring you all the latest looks for less. Whether you like to keep one step ahead of the trends, or if subtle style is more your thing, we’re sure we’ve got something you’ll love."
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
